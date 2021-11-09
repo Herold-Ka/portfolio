@@ -1,0 +1,51 @@
+      * {
+          list-style: none;
+      }
+      
+      .sideBar {
+          width: 130px;
+          height: 130px;
+          border-radius: 0 0 50% 0;
+          background-color: #303642;
+      }
+      
+      #sidebarCollapse {
+          position: absolute;
+          top: 30px;
+          left: 30px;
+      }
+      
+      .navSideBar {
+          display: none;
+          position: static;
+          /*width: 100%;*/
+          height: 100%;
+          background-color: #303642;
+          animation-duration: 3s;
+          animation-delay: 15s;
+          animation-name: glissement;
+          animation-iteration-count: 1;
+      }
+      
+      .navSideBar ul {
+          padding: 35px;
+          display: flex;
+          align-items: center;
+      }
+      
+      .navSideBar li {
+          margin: auto;
+          display: block;
+      }
+      
+      .navSideBar a {
+          text-decoration: none;
+          margin: auto;
+          display: block;
+      }
+      
+      .navSideBar p {
+          text-align: center;
+          color: antiquewhite;
+          cursor: pointer;
+      }

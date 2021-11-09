@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    user-select: none;
+}
+
+
+/*Header*/
+
+
+/*Présentation header div*/
+
+header {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    display: block;
+    position: relative;
+    background: rgb(255, 243, 246);
+    background: linear-gradient(56deg, rgba(255, 243, 246, 1) 5%, rgba(191, 191, 191, 1) 57%, rgba(195, 195, 195, 1) 82%);
+}
+
+
+/*Présentation header info*/
+
+.infoHead {
+    z-index: 0;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    /*display: block;*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.divImage {
+    z-index: 0;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.divImage img {
+    margin: auto;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.divText {
+    margin: auto;
+}
+
+.divText h3,
+.divText p {
+    text-align: center;
+}
+
+
+/*aPropos*/
+
+.aProposContainer {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-color: #303642;
+}
+
+.divApropos {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.aPropos {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.divImg {
+    width: 50%;
+    height: 70%;
+}
+
+.divImg img {
+    width: 96%;
+    /*height: 90%;*/
+    margin: auto;
+}
+
+.divAproposText {
+    width: 40%;
+    margin: auto;
+}
+
+.divAproposText h4,
+.divAproposText p {
+    text-align: center;
+    color: antiquewhite;
+}
+
+.cardPropos {
+    height: 25%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.divAproposText {
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+.cardPropos img {
+    height: 80%;
+    /*width: 80%;*/
+    margin: auto;
+}
+
+.description {
+    margin: auto;
+}
+
+.cardPropos p {
+    font-size: small;
+}
+
+.cardOne,
+.cardTwo,
+.cardThird,
+.cardFourth {
+    border-radius: 5px;
+    display: flex;
+    height: 80%;
+    width: 22%;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: rgb(191, 191, 191);
+}
+
+.cardOne:hover,
+.cardTwo:hover,
+.cardThird:hover,
+.cardFourth:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardOne img,
+.cardTwo img,
+.cardThird img,
+.cardFourth img {
+    width: 30%;
+}
+
+.cardOne h3,
+.cardTwo h3,
+.cardThird h3,
+.cardFourth h3,
+.cardOne h4,
+.cardTwo h4,
+.cardthird h4,
+.cardFourth h4,
+.cardOne h5,
+.cardTwo h5,
+.cardThird h5,
+.cardFourth h4,
+.cardOne p,
+.cardTwo p,
+.cardThird p,
+.cardFourth p {
+    text-align: center;
+}
+
+
+/*Compétence*/
+
+.competence {
+    height: 80vh;
+    width: 100%;
+    margin: auto;
+    background: rgb(255, 243, 246);
+    background: linear-gradient(56deg, rgba(255, 243, 246, 1) 5%, rgba(191, 191, 191, 1) 57%, rgba(195, 195, 195, 1) 82%);
+}
+
+.titreComp h3 {
+    text-align: center;
+}
+
+.divCompetence {
+    width: 100%;
+    height: 80%;
+    margin: auto;
+}
+
+.divCompetence {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.divCompetence ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 40vh;
+    margin: auto;
+    padding-top: 6vh;
+}
+
+.divCompetence li {
+    width: 15%;
+    height: 50%;
+}
+
+.divCompetence img {
+    height: 15vh;
+    margin: auto;
+    display: block;
+}
+
+
+/*Portfolio*/
+
+.portfolio {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    background-color: #303642;
+}
+
+.entete img {
+    width: 35%;
+    margin: auto;
+    display: block;
+}
+
+h5,
+.soustitre h3 {
+    text-align: center;
+}
+
+.divPortfolio {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    height: 90%;
+    margin: auto;
+}
+
+.soustitre {
+    height: 10%;
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.firstFolio,
+.secondFolio {
+    height: 80%;
+    width: 30%;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-top: 2vh;
+    display: block;
+    position: relative;
+    border-radius: 2%;
+    background: rgb(255, 243, 246);
+    background: linear-gradient(56deg, rgba(255, 243, 246, 1) 5%, rgba(191, 191, 191, 1) 57%, rgba(195, 195, 195, 1) 82%);
+}
+
+.card1,
+.card2 {
+    margin: auto;
+    width: 95%;
+    height: 95%;
+}
+
+.entete {
+    margin: auto;
+    height: 40%;
+    width: 100%;
+    border-bottom: solid 1px black;
+}
+
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    background: rgb(255, 243, 246);
+    background: linear-gradient(56deg, rgba(255, 243, 246, 1) 5%, rgba(191, 191, 191, 1) 57%, rgba(195, 195, 195, 1) 82%);
+}
+
+.contactMe {
+    width: 60%;
+    margin: auto;
+}
+
+.contactMe h3 {
+    text-align: center;
+    margin: auto;
+}
+
+.contactMe p {
+    text-align: center;
+}
+
+.reseaux {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.reseaux .instagram,
+.reseaux .facebook,
+.reseaux .linkedIn,
+.reseaux .email {
+    margin: auto;
+}
+
+.reseaux img {
+    height: 10vh;
+}
+
+@media screen and (max-width: 1000px) {
+    .competence {
+        height: 90vh;
+    }
+    /**Portfolio*/
+    .divPortfolio {
+        width: 100%;
+    }
+    .firstFolio,
+    .secondFolio {
+        width: 40%;
+    }
+    .card1 .card2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .competence {
+        height: 125vh;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .divImg {
+        display: none;
+    }
+    .aProposContainer {
+        height: 150vh;
+    }
+    .divAproposText {
+        width: 95%;
+        height: 30%;
+    }
+    .cardPropos {
+        width: 100%;
+        height: 70%;
+        margin: auto;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .cardOne,
+    .cardTwo,
+    .cardThird,
+    .cardFourth {
+        width: 60%;
+    }
+    /**Compétence */
+    .competence {
+        height: 45vh;
+    }
+    .divCompetence img {
+        height: 10vh;
+    }
+    .divCompetence ul {
+        justify-content: space-between;
+    }
+    /**Portfolio*/
+    .divPortfolio {
+        width: 100%;
+    }
+    .firstFolio,
+    .secondFolio {
+        width: 47%;
+    }
+    .card1 .card2 {
+        width: 100%;
+    }
+    /**Contatez-moi*/
+    footer {
+        flex-direction: column;
+    }
+    .reseaux {
+        margin: auto;
+    }
+}
