@@ -21,8 +21,9 @@ header {
     margin: auto;
     display: block;
     position: relative;
-    background: rgb(255, 243, 246);
-    background: linear-gradient(56deg, rgba(255, 243, 246, 1) 5%, rgba(191, 191, 191, 1) 57%, rgba(195, 195, 195, 1) 82%);
+    /*background: rgb(255, 243, 246);
+    background: linear-gradient(56deg, rgba(255, 243, 246, 1) 5%, rgba(191, 191, 191, 1) 57%, rgba(195, 195, 195, 1) 82%);*/
+    background-image: url('./../img/illustration-minimalism-symmetry-blue-triangle-pattern-91245-wallhere.com.jpg');
 }
 
 
