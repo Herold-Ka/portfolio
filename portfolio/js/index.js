@@ -28,9 +28,9 @@ function sideBar() {
             document.getElementById("apropos").style.display = "block";
             document.getElementById("competence").style.display = "block";
             document.getElementById("portfolio").style.display = "block";
-            document.getElementById("reseaux").style.display = "block";
-            document.getElementById("idSidebar").style.height = "40px";
-            document.getElementById("idSidebar").style.width = "40px";
+            document.getElementById("reseaux").style.display = "flex";
+            document.getElementById("idSidebar").style.height = "130px";
+            document.getElementById("idSidebar").style.width = "130px";
             document.getElementById("idHeader").style.height = "100vh";
             document.getElementById("idHeader").style.width = "100%";
         } 

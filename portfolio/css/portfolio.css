@@ -33,7 +33,6 @@ header {
     width: 70%;
     height: 70%;
     margin: auto;
-    /*display: block;*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -127,7 +126,6 @@ header {
 
 .cardPropos img {
     height: 80%;
-    /*width: 80%;*/
     margin: auto;
 }
 
@@ -217,7 +215,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    height: 40vh;
+    height: 20vh;
     margin: auto;
     padding-top: 6vh;
 }
@@ -243,10 +241,28 @@ header {
     background-color: #303642;
 }
 
-.entete img {
-    width: 35%;
+
+
+.entete {
+    margin: auto;
+    height: 30%;
+    width: 100%;
+    border-bottom: solid 1px black;
+    display: flex;
+    flex-direction: column;
+
+}
+.entete > img {
     margin: auto;
     display: block;
+}
+.entete > img{
+    height: 30%;
+    margin: auto;
+}
+.entete > h5{
+    height: 45%;
+    text-align: center;
 }
 
 h5,
@@ -255,9 +271,9 @@ h5,
 }
 
 .divPortfolio {
-    width: 80%;
+    width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 90%;
     margin: auto;
 }
@@ -270,9 +286,11 @@ h5,
 }
 
 .firstFolio,
-.secondFolio {
+.secondFolio,
+.thirdFolio,
+.fourthFolio {
     height: 80%;
-    width: 30%;
+    width: 22%;
     margin: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -285,18 +303,15 @@ h5,
 }
 
 .card1,
-.card2 {
+.card2,
+.card3,
+.card4 {
     margin: auto;
     width: 95%;
     height: 95%;
 }
 
-.entete {
-    margin: auto;
-    height: 40%;
-    width: 100%;
-    border-bottom: solid 1px black;
-}
+
 
 
 /*Footer*/
@@ -324,7 +339,7 @@ footer {
 }
 
 .reseaux {
-    width: 40%;
+    width: 31%;
     height: 100%;
     display: flex;
     justify-content: space-around;
