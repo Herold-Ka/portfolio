@@ -7,6 +7,7 @@
 body {
     min-height: 100vh;
     user-select: none;
+    min-width: 99vw;
 }
 
 
@@ -16,14 +17,14 @@ body {
 /*Présentation header div*/
 
 header {
-    height: 100vh;
-    width: 100%;
+    height: 50vh !important;
+    /**width: 100%;*/
     margin: auto;
     display: block;
     position: relative;
-    /*background: rgb(255, 243, 246);
-    background: linear-gradient(56deg, rgba(255, 243, 246, 1) 5%, rgba(191, 191, 191, 1) 57%, rgba(195, 195, 195, 1) 82%);*/
-    background-image: url('./../img/illustration-minimalism-symmetry-blue-triangle-pattern-91245-wallhere.com.jpg');
+    background: #F0EEED;
+    /*background: linear-gradient(56deg, rgba(255, 243, 246, 1) 5%, rgba(191, 191, 191, 1) 57%, rgba(195, 195, 195, 1) 82%);
+    background-image: url('./../img/illustration-minimalism-symmetry-blue-triangle-pattern-91245-wallhere.com.jpg');*/
 }
 
 
@@ -35,7 +36,7 @@ header {
     height: 70%;
     margin: auto;
     position: relative;
-    display: flex;
+    display: block;
     flex-direction: column;
 }
 
@@ -72,7 +73,7 @@ header {
 
 .aProposContainer {
     width: 100%;
-    height: 100vh;
+    height: 750px;
     margin: auto;
     background-color: #303642;
 }
@@ -104,9 +105,13 @@ header {
     width: 40%;
     margin: auto;
 }
-
-.divAproposText h4,
+.divAproposText h4{
+    font: 20px Arial, sans-serif;
+    text-align: center;
+    color: antiquewhite;
+}
 .divAproposText p {
+    font: 15px Arial, sans-serif;
     text-align: center;
     color: antiquewhite;
 }
@@ -134,8 +139,14 @@ header {
     margin: auto;
 }
 
+.description h5{
+    font: 11px Arial, sans-serif;
+    color: #303642;
+}
+
 .cardPropos p {
-    font-size: small;
+    font:9.5px Arial, sans-serif;
+    color: #303642;
 }
 
 .cardOne,
@@ -149,7 +160,7 @@ header {
     margin: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    background-color: rgb(191, 191, 191);
+    background-color: #F0EEED;
 }
 
 .cardOne:hover,
@@ -163,7 +174,7 @@ header {
 .cardTwo img,
 .cardThird img,
 .cardFourth img {
-    width: 30%;
+    height: 70%;
 }
 
 .cardOne h3,
@@ -192,8 +203,8 @@ header {
     height: 80vh;
     width: 100%;
     margin: auto;
-    background: rgb(255, 243, 246);
-    background: linear-gradient(56deg, rgba(255, 243, 246, 1) 5%, rgba(191, 191, 191, 1) 57%, rgba(195, 195, 195, 1) 82%);
+    background: #F0EEED;
+    /*background: linear-gradient(56deg, rgba(255, 243, 246, 1) 5%, rgba(191, 191, 191, 1) 57%, rgba(195, 195, 195, 1) 82%);*/
 }
 
 .titreComp h3 {
@@ -231,9 +242,15 @@ header {
     margin: auto;
     display: block;
 }
+.comp a{
+    color: black;
+    text-decoration: none;
+}
 
 
 /*Portfolio*/
+
+/**Portfolio Porjet*/
 
 .portfolio {
     height: 100vh;
@@ -242,33 +259,53 @@ header {
     background-color: #303642;
 }
 
-
+.portfolio p{
+    color: #303642;
+}
 
 .entete {
+    position: relative;
     margin: auto;
     height: 30%;
     width: 100%;
     border-bottom: solid 1px black;
     display: flex;
     flex-direction: column;
-
+    justify-content: space-between;
 }
 .entete > img {
     margin: auto;
-    display: block;
-}
-.entete > img{
-    height: 30%;
+    /*display: block;*/
+    height: 50%;
     margin: auto;
 }
+
 .entete > h5{
-    height: 45%;
+    font: 12px Arial, sans-serif;
     text-align: center;
+    color: #303642;
+    display: block;
+    z-index: 1;
 }
 
 h5,
 .soustitre h3 {
     text-align: center;
+    color: #F0EEED;
+}
+
+.aperçu{
+    z-index: 99;
+    position: relative;
+    top: -230px;
+    left: 170px;
+    height: 250px;
+    width: 500px;
+    visibility: hidden;
+}
+.aperçu > img{
+    height: 250px;
+    width: 500px;
 }
 
 .divPortfolio {
@@ -286,12 +323,26 @@ h5,
     display: block;
 }
 
+.projet{
+    height: 90%;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    border-right: solid 1px #F0EEED;
+}
+
+.exp{
+    height: 100%;
+    width: 40%;
+}
+
 .firstFolio,
 .secondFolio,
 .thirdFolio,
 .fourthFolio {
-    height: 80%;
-    width: 22%;
+    height: 40%;
+    width: 40%;
     margin: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -299,8 +350,7 @@ h5,
     display: block;
     position: relative;
     border-radius: 2%;
-    background: rgb(255, 243, 246);
-    background: linear-gradient(56deg, rgba(255, 243, 246, 1) 5%, rgba(191, 191, 191, 1) 57%, rgba(195, 195, 195, 1) 82%);
+    background: #F0EEED;
 }
 
 .card1,
@@ -311,9 +361,59 @@ h5,
     width: 95%;
     height: 95%;
 }
+.card1 ul,.card2 ul,.card3 ul,.card4 ul{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+.comp p{
+    font:9.5px Arial, sans-serif;
+    color: #303642;
+}
+.comp a{
+    font:9.5px Arial, sans-serif;
+    color: #303642;
+}
+/** Porfolio Expérience*/
 
+.exp{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+.cardExp1, .cardExp2, .cardExp3{
+    height: 29.5%;
+    width: 45%;
+    border-radius: 2%;
+    background: #F0EEED;
+}
+.cardExpEntete{
+    height: 37%;
+    width: 90%;
+    margin: auto;
+    border-bottom: solid 1px #303642;
+    margin-bottom: 20px;
+}
 
+.cardExpEntete > img{
+    height: 50%;
+    display: block;
+    margin: auto;
+}
+
+.cardExpEntete > h5{
+    font: 12px Arial, sans-serif;
+    text-align: center;
+    color: #303642;
+    display: block;
+    z-index: 1;
+}
 
 /*Footer*/
 
@@ -321,8 +421,8 @@ footer {
     width: 100%;
     height: 40vh;
     display: flex;
-    background: rgb(255, 243, 246);
-    background: linear-gradient(56deg, rgba(255, 243, 246, 1) 5%, rgba(191, 191, 191, 1) 57%, rgba(195, 195, 195, 1) 82%);
+    background: #F0EEED;
+    /*background: linear-gradient(56deg, rgba(255, 243, 246, 1) 5%, rgba(191, 191, 191, 1) 57%, rgba(195, 195, 195, 1) 82%);*/
 }
 
 .contactMe {
@@ -357,39 +457,187 @@ footer {
     height: 10vh;
 }
 
+/** Effect*/
+
 @media screen and (max-width: 1000px) {
+    /**Header*/
+    header{
+        height: 30vh !important;
+    }
+    /**Compétence*/
     .competence {
-        height: 90vh;
+        height: 50vh;
+    }
+    
+    .divCompetence ul{
+        height: 12vh;
+    }
+    
+    .divCompetence img{
+        height: 6.2vh;
     }
     /**Portfolio*/
+    .portfolio{
+        height: 60vh;
+    }
     .divPortfolio {
         width: 100%;
     }
     .firstFolio,
-    .secondFolio {
+    .secondFolio
+    .thirdFolio,
+    .fourthFolio {
         width: 40%;
     }
     .card1 .card2 {
         width: 100%;
     }
-}
 
-@media screen and (max-width:660px) {
-    .competence {
-        height: 125vh;
+    .cardOne img,
+    .cardTwo img,
+    .cardThird img,
+    .cardFourth img{
+        height: 55%;
+    }
+    .description{
+        width: 30vw !important;
+    }
+    .cardOne p,
+    .cardTwo p,
+    .cardThird p,
+    .cardFourth p{
+        font-size: 10px;
+    }
+
+    /**A Propos*/
+    .divAproposText h5{
+        font: 15px Arial, sans-serif;
+    }
+    .divAproposText p{
+        font: 12px Arial, sans-serif;
+    }
+    /**Footer*/
+    .reseaux img{
+        height: 5vh;
     }
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:660px) {
+    /**Portfolio*/
+    .firstFolio,
+    .secondFolio,
+    .thirdFolio,
+    .fourthFolio{
+        height: 45%;
+    }
+    .card1,
+    .card2,
+    .card3,
+    .card4{
+        width: 90%;
+    }
+    .entete{
+        height: 22%;
+    }
+    .entete h5{
+        font: 7.2px Arial, sans-serif !important;
+    }
+    .comp{
+        /*height: 90% !important;*/
+    }
+    .comp ul{
+        justify-content: space-around;
+        padding: 0;
+        height: 80%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .comp p{
+        font: 6px Arial, sans-serif !important;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .comp a{
+        font: 6px Arial, sans-serif !important;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .competence {
+        height: 125vh;
+    }
+    .cardExpEntete{
+        height: 29%;
+        margin-bottom: 7px;
+    }
+    .cardExpEntete h5{
+        font: 7px Arial, sans-serif !important;
+       
+    }
+    .cardExp1 ul, .cardExp2 ul, .cardExp3 ul{
+        margin-left: 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .cardExp1 li, .cardExp2 li, .cardExp3 li{
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+    /**Competence*/
+
+    .competence{
+        height: 55vh;
+    }
+
+    /**A propos*/
+    .aProposContainer{
+        height: 450px;
+    }
+
+    .cardOne img,
+    .cardTwo img,
+    .cardThird img,
+    .cardFourth img{
+        height: 17%;
+    }
+    .divAproposText h4{
+        font: 12px Arial, sans-serif;
+    }
+    .divAproposText p{
+        font: 9px Arial, sans-serif;
+    }
+    .description h5{
+        font: 8px Arial, sans-serif;
+    }
+    .description p{
+        font: 6.5px Arial, sans-serif;
+    }
+}
+
+@media screen and (max-width:400px){
+    .infoHead h3{
+        font: 17px Arial, sans-serif;
+    }
+    .infoHead p{
+        font: 15px Arial, sans-serif;
+    }
+    .sideBar{
+        height: 75px !important;
+        width: 75px !important;
+    }
+    #sidebarCollapse{
+        top: 15px !important;
+        left: 15px !important;
+    }
+}
+
+/*@media screen and (max-width:576px) {
     .divImg {
         display: none;
     }
     .aProposContainer {
         height: 150vh;
-    }
-    .divAproposText {
-        width: 95%;
-        height: 30%;
     }
     .cardPropos {
         width: 100%;
@@ -405,7 +653,7 @@ footer {
         width: 60%;
     }
     /**Compétence */
-    .competence {
+    /*.competence {
         height: 45vh;
     }
     .divCompetence img {
@@ -415,21 +663,38 @@ footer {
         justify-content: space-between;
     }
     /**Portfolio*/
-    .divPortfolio {
+    /*.divPortfolio {
         width: 100%;
     }
     .firstFolio,
-    .secondFolio {
+    .secondFolio, 
+    .thirdFolio,
+    .fourthFolio {
         width: 47%;
     }
     .card1 .card2 {
         width: 100%;
     }
     /**Contatez-moi*/
-    footer {
+    /*footer {
         flex-direction: column;
     }
     .reseaux {
         margin: auto;
+    }
+}*/
+
+@media screen and (max-height:700px){
+    .comp p{
+        font: 8.5px Arial, sans-serif;
+    }
+    .comp a{
+        font: 8.5px Arial, sans-serif;
+    }
+    .entete h5{
+        font: 11px Arial, sans-serif;
+    }
+    .cardExpEntete h5{
+        font: 9.5px Arial, sans-serif;
     }
 }

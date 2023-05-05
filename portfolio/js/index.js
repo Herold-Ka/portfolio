@@ -1,5 +1,34 @@
 var nb = 0;
 
+function aperçu(divInfo){
+    switch (divInfo){
+        case 'mangaNation':
+        document.getElementById("aperçuMangaNation").style.visibility = "visible";
+        break;
+        case 'vitrine':
+        document.getElementById("aperçuVitrine").style.visibility = "visible";
+        break;
+        case 'pickEtBan':
+        document.getElementById("aperçuPickEtBan").style.visibility = "visible";
+        break;
+        default: console.log('erreur aperçu')
+    }
+}
+function closeAperçu(divInfo){
+    switch (divInfo){
+        case 'mangaNation':
+        document.getElementById("aperçuMangaNation").style.visibility = "hidden";
+        break;
+        case 'vitrine':
+        document.getElementById("aperçuVitrine").style.visibility = "hidden";
+        break;
+        case 'pickEtBan':
+        document.getElementById("aperçuPickEtBan").style.visibility = "hidden";
+        break;
+        default: console.log('erreur aperçu')
+    }
+}
+
 function sideBar() {
     if (nb == 0) {
         nb++;
