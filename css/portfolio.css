@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-body {
+html, body {
     min-height: 100vh;
     user-select: none;
-    min-width: 99vw;
+    overflow-x: hidden;
+    /*max-width: 90vw;*/
 }
 
 
