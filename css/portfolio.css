@@ -297,8 +297,8 @@ h5,
 .aperçu{
     z-index: 99;
     position: relative;
-    top: -230px;
-    left: 170px;
+    top: 0;
+    left: 0;
     height: 250px;
     width: 500px;
     visibility: hidden;
