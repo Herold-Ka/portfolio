@@ -32,7 +32,7 @@ function closeAperçu(divInfo){
 function sideBar() {
     if (nb == 0) {
         nb++;
-        if (window.matchMedia('screen and (max-width: 550px)')) {
+        //if (window.matchMedia('screen and (max-width: 550px)')) {
             var sideBar = document.getElementById("idNavSide").style;
             var idNavUL = document.getElementById("idNavUL").style;
             document.getElementById("sidebarCollapse").style.display = "none";
@@ -47,10 +47,10 @@ function sideBar() {
             idNavUL.flexDirection = "column";
             idNavUL.margin = "auto";
             sideBar.margin = "auto";
-        }
+        //}
     } else if (nb >= 1) {
         nb = 0;
-        if (window.matchMedia('screen and (max-width: 550px)')) {
+        //if (window.matchMedia('screen and (max-width: 550px)')) {
             document.getElementById("sidebarCollapse").style.display = "block";
             document.getElementById("Head").style.display = "block";
             document.getElementById("idNavSide").style.display = "none";
@@ -62,6 +62,6 @@ function sideBar() {
             document.getElementById("idSidebar").style.width = "130px";
             document.getElementById("idHeader").style.height = "100vh";
             document.getElementById("idHeader").style.width = "100%";
-        } 
+        //} 
     }
 }
