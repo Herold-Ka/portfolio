@@ -463,9 +463,9 @@ footer {
 
 @media screen and (max-width: 1000px) {
     /**Header*/
-    header{
+    /*header{
         height: 30vh !important;
-    }
+    }*/
     /**Compétence*/
     .competence {
         height: 50vh;
@@ -621,14 +621,14 @@ footer {
     .infoHead p{
         font: 15px Arial, sans-serif;
     }
-    .sideBar{
+    /*.sideBar{
         height: 75px !important;
         width: 75px !important;
     }
     #sidebarCollapse{
         top: 15px !important;
         left: 15px !important;
-    }
+    }*/
 }
 
 /*@media screen and (max-width:576px) {
